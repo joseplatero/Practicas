@@ -13,7 +13,11 @@ import java.util.Scanner;
  * @author nayos
  */
 public class ImpLibroContenedor {
-    Scanner scanner = new Scanner(System.in);
+    
+    public ImpLibroContenedor() {}
+    
+    public void initialize() {
+        Scanner scanner = new Scanner(System.in);
         LibrosContenedor biblioteca = new LibrosContenedor();
         int totalAddBook = 0;
         System.out.println("Por favor digite la cantidade de libros a ingresas");
@@ -35,10 +39,6 @@ public class ImpLibroContenedor {
         scanner.close();
         
         biblioteca.showBooks();
-
-    private static class totalAddBook {
-
-        public totalAddBook() {
-        }
     }
+
 }
